@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+        Scanner ler2 = new Scanner(System.in);
+
+        System.out.println("Digite a sua primeira nota:");
+        Float nota = ler.nextFloat();
+        
+        System.out.println("Digite a sua segunda nota:");
+        Float nota2 = ler2.nextFloat();
+        
+        Float media = (nota+nota2)/2;
+
+        System.out.println("A sua média é: "+media);
+
+    }
+}
