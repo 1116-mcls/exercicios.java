@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner num = new Scanner(System.in);
+        Scanner num2 = new Scanner(System.in);
+
+        System.out.println("Digite um número inteiro:");
+        int numero = num.nextInt();
+        
+        System.out.println("Digite outro número inteiro:");
+        int numero2 = num2.nextInt();
+        
+        int soma = numero + numero2;
+
+        System.out.println("A soma entre estes números é igual a: "+soma);
+
+    }
+}
