@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner mensagem = new Scanner(System.in);
+        Scanner mensagem2 = new Scanner(System.in);
+
+        System.out.println("Digite o seu nome:");
+        String nome = mensagem.next();
+        
+        System.out.println("Digite o seu salário:");
+        Float salario = mensagem2.nextFloat();
+
+        System.out.println("O funcionário " + nome + " tem um salário de " + salario);
+
+    }
+}
