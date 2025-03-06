@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner mensagem = new Scanner(System.in);
+
+        System.out.println("Digite o seu nome:");
+        String nome = mensagem.next();
+
+        System.out.println("Seja bem-vindo(a), " + nome);
+
+    }
+}
