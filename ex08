@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite uma distância em metros:");
+        Float dist = ler.nextFloat();
+
+        Float km = dist/1000;
+        Float cm = dist*100;
+        Float mm = dist*1000;
+
+        System.out.println("A distância em km é: "+km+", em cm é: "+cm+" e em mm é: "+mm);
+
+    }
+}
