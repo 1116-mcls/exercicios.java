@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+        Scanner ler2 = new Scanner(System.in);
+
+        System.out.println("Digite a largura da parede:");
+        Float largura = ler.nextFloat();
+
+        System.out.println("Digite a altura da parede:");
+        Float altura = ler2.nextFloat();
+
+        Float area = altura*largura;
+        Float tinta = area/2;
+
+        System.out.println("A área a ser pintada é de "+area+" m² e é necessário "+tinta+" litros de tinta para pinta-lá.");
+
+    }
+}
