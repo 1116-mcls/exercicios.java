@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+        Scanner ler2 = new Scanner(System.in);
+
+        System.out.println("Digite quantos km o seu carro alugado rodou: ");
+        double km = ler.nextDouble();
+        
+        System.out.println("Digite por quantos dias o seu carro foi alugado:");
+        double dias = ler2.nextDouble();
+        
+        double pagar = (90*dias)+(0.20*km); 
+
+        System.out.println("Você tem que pagar "+pagar+" reais pelo carro alugado.");
+    }
+}
