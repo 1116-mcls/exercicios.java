@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite o valor do produto:");
+        double prod = ler.nextDouble();
+        
+        double percentual = 5.0 / 100.0; 
+        double promocao = prod-(percentual*prod);
+        
+        System.out.println("O preço do produto com a promoção é: "+promocao);
+    }
+}
