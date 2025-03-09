@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+        Scanner ler2 = new Scanner(System.in);
+
+        System.out.println("Digite quantos cigarros você fuma por dia:");
+        int cigarros = ler.nextInt();
+        
+        System.out.println("Digite a quantos anos você fuma:");
+        int anos = ler2.nextInt();
+        
+        double perdeu = ((anos*525960)-(cigarros*10))*0.000694444; 
+        DecimalFormat df = new DecimalFormat("0.0");
+
+        System.out.println("Você perdeu "+df.format(perdeu)+" dias por fumar");
+    }
+}
