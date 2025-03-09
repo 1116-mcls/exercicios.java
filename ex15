@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite quantos dias você trabalhou este mês:");
+        double dias = ler.nextDouble();
+        
+        double salario = 8*25*dias; 
+
+        System.out.println("Este é o seu salário: "+salario);
+    }
+}
