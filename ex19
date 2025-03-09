@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+        Scanner ler2 = new Scanner(System.in);
+        Scanner ler3 = new Scanner(System.in);
+
+        System.out.println("Digite o seu nome:");
+        String nome = ler.next();
+        System.out.println("Digite a sua primeira nota:");
+        Float nota1 = ler2.nextFloat();
+        System.out.println("Digite a sua segunda nota:");
+        Float nota2 = ler3.nextFloat();
+        
+        Float media = (nota1+nota2)/2;
+        
+        if (media>=7){
+            System.out.println(nome+", você foi aprovado!");
+        } else{
+           System.out.println(nome+", você foi reprovado.");
+        }
+    }
+}
