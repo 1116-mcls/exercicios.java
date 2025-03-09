@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite a velocidade do seu carro:");
+        int velocidade = ler.nextInt();
+        
+        int multa = (velocidade-80)*5;
+        
+        if (velocidade>80){
+            System.out.println("Você foi multado em "+multa+" reais.");
+        } else{
+           System.out.println("Está tudo bem!!!");
+        }
+    }
+}
